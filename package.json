@@ -1,0 +1,16 @@
+{
+  "name": "obsidian-compat-matrix",
+  "version": "0.1.0",
+  "description": "Validate Obsidian plugin manifest and versions.json compatibility metadata, then emit a test matrix.",
+  "type": "module",
+  "bin": { "obsidian-compat-matrix": "src/cli.js" },
+  "scripts": { "test": "node --test", "check": "node --check src/matrix.js && node --test" },
+  "keywords": ["obsidian", "obsidian-plugin", "plugin-compatibility", "versions-json", "manifest", "release-testing", "github-actions"],
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/buxerr/obsidian-compat-matrix.git" },
+  "homepage": "https://github.com/buxerr/obsidian-compat-matrix#readme",
+  "bugs": { "url": "https://github.com/buxerr/obsidian-compat-matrix/issues" },
+  "files": ["src", "README.md", "LICENSE"],
+  "publishConfig": { "access": "public" }
+}
